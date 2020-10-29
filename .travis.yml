@@ -26,7 +26,9 @@ env:
       arch: ppc64le
     - TOXENV=pypy3
       arch: ppc64le
-    - TOXENV=flake8install:
+    - TOXENV=flake8
+      arch: ppc64le
+install:
   - travis_retry pip install tox
 script:
   - make test
